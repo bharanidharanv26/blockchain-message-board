@@ -1,0 +1,109 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0f172a;
+  color: #f8fafc;
+}
+
+.app {
+  width: 90%;
+  max-width: 850px;
+  margin: 60px auto;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.4rem;
+  color: #38bdf8;
+  margin-bottom: 10px;
+}
+
+.app > p {
+  color: #cbd5e1;
+}
+
+button {
+  background: #0284c7;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  margin: 8px;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: #0369a1;
+}
+
+.message-box {
+  margin: 35px auto;
+  padding: 25px;
+  background: #1e293b;
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+textarea {
+  width: 100%;
+  min-height: 110px;
+  resize: vertical;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #475569;
+  background: #0f172a;
+  color: white;
+  font-size: 16px;
+  outline: none;
+}
+
+textarea:focus {
+  border-color: #38bdf8;
+}
+
+.status {
+  color: #7dd3fc;
+  overflow-wrap: anywhere;
+}
+
+.message-card {
+  text-align: left;
+  background: #1e293b;
+  border: 1px solid #334155;
+  padding: 18px;
+  margin: 15px 0;
+  border-radius: 10px;
+  overflow-wrap: anywhere;
+}
+
+.message-card p {
+  font-size: 17px;
+}
+
+.message-card small {
+  color: #94a3b8;
+}
+
+@media (max-width: 600px) {
+  .app {
+    margin: 35px auto;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  button {
+    width: 100%;
+    margin: 6px 0;
+  }
+}
